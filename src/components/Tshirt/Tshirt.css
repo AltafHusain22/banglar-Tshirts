@@ -1,0 +1,20 @@
+.t-shirt {
+	border: 2px solid paleturquoise;
+	margin: 10px;
+	border-radius: 15px;
+	
+}
+.t-shirt img{
+	height: 280px;
+	padding: 10px;
+	border-radius: 15px;
+}
+.product-image {
+	border-bottom: 1px solid rgb(221, 217, 214);
+}
+
+.card-footer{
+	display: flex;
+	justify-content: space-around;
+	padding: 10px 0px;
+}
