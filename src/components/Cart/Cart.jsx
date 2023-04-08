@@ -1,4 +1,6 @@
 import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Cart = ({cart, handleRemoveProduct}) => {
 
@@ -10,6 +12,7 @@ const Cart = ({cart, handleRemoveProduct}) => {
 				<p> 
 				{prouct.name} 
                <button onClick={()=>handleRemoveProduct(prouct._id)}> X </button>
+			   <ToastContainer />
 				 </p> )
 			}
 		</div>
