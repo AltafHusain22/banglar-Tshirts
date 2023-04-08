@@ -13,6 +13,12 @@ const Home = () => {
 		setCart(newCart)
 	}
 
+	const handleRemoveProduct = id =>{
+		const remainingProduct = cart.filter(product => product._id !== id )
+		setCart(remainingProduct)
+
+	}
+
 	return (
 		<div className='shop-container'>
 			<div className="product-container">
@@ -27,7 +33,10 @@ const Home = () => {
 			}
 			</div>
 			<div className="cart-container">
-				<Cart cart ={cart}></Cart>
+				<Cart
+				 cart ={cart}
+				 handleRemoveProduct={handleRemoveProduct}
+				 ></Cart>
 			</div>
 		</div>
 	);
